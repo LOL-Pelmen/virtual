@@ -1,0 +1,47 @@
+{
+  "default": {
+    "firstScene": "main_hall",
+    "sceneFadeDuration": 1000,
+    "autoLoad": true,
+    "showControls": true,
+    "mouseZoom": false
+  },
+  "scenes": {
+    "main_hall": {
+      "title": "Главный холл",
+      "type": "equirectangular",
+      "panorama": "assets/img/tour/main_hall_360.jpg",
+      "hotSpots": [
+        {
+          "pitch": -5,
+          "yaw": 45,
+          "type": "scene",
+          "text": "Перейти в аудиторию",
+          "sceneId": "classroom_101"
+        },
+        {
+          "pitch": 10,
+          "yaw": 180,
+          "type": "info",
+          "text": "Стойка информации",
+          "cssClass": "custom-hotspot",
+          "URL": "#info"
+        }
+      ]
+    },
+    "classroom_101": {
+      "title": "Аудитория 101",
+      "type": "equirectangular",
+      "panorama": "assets/img/tour/classroom_360.jpg",
+      "hotSpots": [
+        {
+          "pitch": 0,
+          "yaw": 0,
+          "type": "scene",
+          "text": "Вернуться в холл",
+          "sceneId": "main_hall"
+        }
+      ]
+    }
+  }
+}
